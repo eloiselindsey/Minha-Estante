@@ -1,3 +1,38 @@
 <!DOCTYPE html>
-<html lang="pt-br"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>MinhaEstante — Prévia</title><meta http-equiv="refresh" content="0; url=./frontend/index.html"></head>
-<body><p>Abrindo a prévia estática de MinhaEstante...</p><a href="./frontend/index.html">Abrir o site</a></body></html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MinhaEstante | Apresentação do projeto</title>
+  <link rel="stylesheet" href="frontend/css/style.css">
+  <style>
+    .pagina-previa{max-width:1080px;margin:40px auto;padding:0 24px 40px}
+    .aviso-previa{padding:18px 24px;background:#f5efe6;border-left:4px solid #6d2932;border-radius:10px;margin:28px 0;color:#302825}
+    .livros-previa{display:flex;gap:18px;flex-wrap:wrap;margin:28px 0}
+    .livro-previa{background:#fffcf8;border-radius:14px;padding:18px;box-shadow:0 6px 22px #3028251b;flex:1 1 210px;max-width:320px}
+    .livro-previa img{width:100%;height:195px;object-fit:contain}
+    .livro-previa h3{margin:10px 0}
+    .faixa-progresso{height:10px;background:#e8ddce;border-radius:9px;overflow:hidden}
+    .faixa-progresso span{display:block;height:100%;background:#6d2932}
+  </style>
+</head>
+<body>
+  <header>
+    <a class="logo" href="index.html">📚 MinhaEstante <span>· sua biblioteca pessoal</span></a>
+  </header>
+  <main class="pagina-previa">
+    <section class="hero-conteudo">
+      <span class="selo">PROJETO INTEGRADOR</span>
+      <h1>Cada leitura merece um lugar especial.</h1>
+      <p class="subtitulo">MinhaEstante organiza livros, progresso de leitura, notas e comentários. Esta é a apresentação visual do projeto para o GitHub Pages.</p>
+    </section>
+    <section class="aviso-previa"><strong>Prévia estática:</strong> os cards abaixo são exemplos ilustrativos. O GitHub Pages não executa PHP, Flask ou MySQL; para cadastrar livros de verdade, use a versão PHP/MySQL no XAMPP.</section>
+    <h2>Exemplo de estante</h2>
+    <div class="livros-previa">
+      <article class="livro-previa"><img src="frontend/img/capas/classica.png" alt="Capa ilustrativa clássica"><h3>Leitura clássica</h3><p>Quero ler · 0%</p><div class="faixa-progresso"><span style="width:0%"></span></div></article>
+      <article class="livro-previa"><img src="frontend/img/capas/lua.png" alt="Capa ilustrativa de lua"><h3>Leitura em andamento</h3><p>Lendo · 25%</p><div class="faixa-progresso"><span style="width:25%"></span></div></article>
+      <article class="livro-previa"><img src="frontend/img/capas/botanica.png" alt="Capa ilustrativa botânica"><h3>Leitura concluída</h3><p>Lido · 100%</p><div class="faixa-progresso"><span style="width:100%"></span></div></article>
+    </div>
+    <p>Esta página é uma prévia visual. Os arquivos de desenvolvimento estão no repositório; o cadastro e a edição com banco de dados exigem execução local no XAMPP com PHP e MySQL. A versão Python/Flask está documentada separadamente para POO.</p>
+  </main>
+</body></html>
